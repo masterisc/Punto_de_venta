@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{9075D1AF-4ECA-410D-993C-402DF979B92B}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>puntodeventa</RootNamespace>
+    <AssemblyName>puntodeventa</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarAdmin.Designer.cs">
+      <DependentUpon>AgregarAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarCajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarCajero.Designer.cs">
+      <DependentUpon>AgregarCajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AProducto.Designer.cs">
+      <DependentUpon>AProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CantidadProducto.cs" />
+    <Compile Include="CantidadProducto.Designer.cs">
+      <DependentUpon>CantidadProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContraAdmin.cs" />
+    <Compile Include="ContraAdmin.Designer.cs">
+      <DependentUpon>ContraAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContraSuper.cs" />
+    <Compile Include="ContraSuper.Designer.cs">
+      <DependentUpon>ContraSuper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditaAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditaAdmin.Designer.cs">
+      <DependentUpon>EditaAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editacajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editacajero.Designer.cs">
+      <DependentUpon>Editacajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarProducto.Designer.cs">
+      <DependentUpon>EditarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hash.cs" />
+    <Compile Include="Load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Load.Designer.cs">
+      <DependentUpon>Load.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMySql.cs" />
+    <Compile Include="ModificarAdmin.cs" />
+    <Compile Include="ModificarAdmin.Designer.cs">
+      <DependentUpon>ModificarAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarCajero.cs" />
+    <Compile Include="ModificarCajero.Designer.cs">
+      <DependentUpon>ModificarCajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarProductos.cs" />
+    <Compile Include="MostrarProductos.Designer.cs">
+      <DependentUpon>MostrarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySql.cs" />
+    <Compile Include="SuperUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperUsuario.Designer.cs">
+      <DependentUpon>SuperUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test.Designer1.cs">
+      <DependentUpon>Test.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarAdmin.resx">
+      <DependentUpon>AgregarAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarCajero.resx">
+      <DependentUpon>AgregarCajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AProducto.resx">
+      <DependentUpon>AProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CantidadProducto.resx">
+      <DependentUpon>CantidadProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContraAdmin.resx">
+      <DependentUpon>ContraAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContraSuper.resx">
+      <DependentUpon>ContraSuper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditaAdmin.resx">
+      <DependentUpon>EditaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editacajero.resx">
+      <DependentUpon>Editacajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarProducto.resx">
+      <DependentUpon>EditarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Load.resx">
+      <DependentUpon>Load.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarAdmin.resx">
+      <DependentUpon>ModificarAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarCajero.resx">
+      <DependentUpon>ModificarCajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarProductos.resx">
+      <DependentUpon>MostrarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperUsuario.resx">
+      <DependentUpon>SuperUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Test.Designer1.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
